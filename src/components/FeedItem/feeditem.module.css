@@ -1,0 +1,9 @@
+.imgfullheight > span {
+  height: 100% !important;
+}
+@media screen and (min-width: 700px) {
+  .imgfullheight img {
+    object-fit: contain !important;
+    object-position: top !important;
+  }
+}

@@ -1,43 +1,72 @@
 /** @type {import('tailwindcss').Config} */
+/* eslint-disable no-use-before-define */
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontSize: {
-      xs: '0.75rem',
-      sm: '0.875rem',
-      base: '1rem',
-      lg: '1.125rem',
-      xl: '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
-    },
     extend: {
-      colors: {
-        gray: {
-          100: '#f7fafc',
-          200: '#edf2f7',
-          300: '#e2e8f0',
-          400: '#cbd5e0',
-          500: '#a0aec0',
-          600: '#718096',
-          700: '#4a5568',
-          800: '#2d3748',
-          900: '#1a202c',
-        },
-        blue: {
-          100: '#ebf8ff',
-          200: '#bee3f8',
-          300: '#90cdf4',
-          400: '#63b3ed',
-          500: '#4299e1',
-          600: '#3182ce',
-          700: '#2b6cb0',
-          800: '#2c5282',
-          900: '#2a4365',
-        },
+      screens: {
+        msm: { max: "640px" },
+        mmd: { max: "700px" },
+        mlg: { max: "1000px" },
+        sm: "640px",
+        md: "700px",
+        lg: "1000px",
+      },
+      fontFamily: {
+        lora: ["Lora", "Georgia", "serif"],
+        sourceCodePro: ['"Source Code Pro"', "monaco", "monospace"],
+        viceGrotesk: ['"VICE Grotesk"', '"Helvetica Neue"', "sans-serif"],
+        helvetica: ['"Helvetica Neue"', "Arial", "sans-serif"],
+      },
+      boxShadow: {
+        sm: "inset 0 1px 0 0 rgb(255 255 255 / 0.2)",
+      },
+      maxWidth: {
+        "10xl": "1600px",
+      },
+      spacing: {
+        0.75: "0.1875rem",
+        pix10: "10px",
+        pix15: "15px",
+        pix30: "30px",
+        pix40: "40px",
+        pix80: "80px",
+        pix60: "60px",
+        pix20: "20px",
+        npix20: "-20px",
+        npix40: "-40px",
+        pix150: "150px",
+        19: "4.75rem",
+        30: "7.5rem",
+        "16by9": "56.25%",
+      },
+      width: {
+        pix40: "40px",
+      },
+      padding: {},
+      minWidth: {
+        30: "7.5rem",
+        pix150: "150px",
+      },
+      fontSize: {
+        sxs: "0.6875rem",
+        ssm: "0.8125rem",
+        "3xlp": "2rem",
+        "5xlp": "3.125rem",
+      },
+      lineHeight: {
+        general: "1.3",
+      },
+      flexBasis: {},
+      minHeight: {
+        pix400: "400px",
+      },
+      animation: {
+        "spin-slow": "spin 36s linear infinite",
+        "spin-medium": "spin 5s linear infinite",
+      },
+      transformOrigin: {
+        "bottom-center": "bottom center",
       },
     },
   },
