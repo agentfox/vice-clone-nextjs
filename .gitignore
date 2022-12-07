@@ -44,3 +44,4 @@ local
 
 /note
 /.vscode
+.env.local
