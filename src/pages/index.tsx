@@ -25,9 +25,7 @@ const Index = (props: { feeds: IFeedItem[] }) => {
 };
 
 export async function getServerSideProps() {
-  const res = await axios.get(
-    "http://localhost:3000/api/articles?limit=4&page=0"
-  );
+  const res = await axios.get(`${process.env.API_URL}/articles?limit=4&page=0`);
 
   return {
     props: { feeds: res.data.articles },
