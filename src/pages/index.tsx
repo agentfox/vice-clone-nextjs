@@ -26,7 +26,7 @@ const Index = (props: { feeds: IFeedItem[] }) => {
 
 export async function getServerSideProps() {
   const res = await axios.get(
-    `${process.env.VERCEL_URL}/api/articles?limit=4&page=0`
+    `${process.env.NEXT_PUBLIC_VERCEL_URL}/api/articles?limit=4&page=0`
   );
 
   return {
